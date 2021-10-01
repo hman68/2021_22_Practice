@@ -2,3 +2,6 @@
 
 #*Tip : BMI = weight (lb) / height (in) / height (in)] x 703
 
+weight = input("Please input your weight (in pounds): \n")
+height = input("Please input your height (in inches):\n")
+print(((weight/height)/height)*703)
