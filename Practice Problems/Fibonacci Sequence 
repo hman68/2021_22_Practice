@@ -3,3 +3,15 @@
 #Objective:useing functions and user input
 
 #*Tip: The Fibonnaci seqence is a sequence of numbers where the next number in the sequence is the sum of the previous two numbers in the sequence. The sequence looks like this: 1, 1, 2, 3, 5, 8, 13,
+
+curNum = 1
+prevNum = 0
+n = input("Please input the number of numbers you would like to print out:\n")
+print(1)
+for x in range(int(n)):
+  temp = curNum
+  curNum += prevNum
+  prevNum = temp
+  
+  
+  print(str(curNum))
