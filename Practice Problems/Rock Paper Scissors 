@@ -2,3 +2,24 @@
 
 # Objective: Using python input method
 # *Tip:  using player input compare them to determine winner 
+def Interpreter(input):
+  if(input.lower() == "paper"):
+    return 0
+  elif(input.lower() == "scissors"):
+    return 1
+  else:
+    return 2
+
+p1 = Interpreter(input("Player 1, please type your command (Rock, Paper, Scissors): "))
+p2 = Interpreter(input("Player 2, please type your command (Rock, Paper, Scissors): "))
+
+if(((p1 == 0) and (p2 == 2)) or ((p2 == 0) and (p1 == 2))):
+  if(p1 == 0):
+    print("Player one wins!")
+  else:
+    print("Player two wins!")
+else:
+  if(p1 < p2):
+    print("Player two wins!")
+  else:
+    print("Player one wins!")
