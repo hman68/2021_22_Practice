@@ -1,1 +1,3 @@
 #Use a print statement to print your name, grade, major, and a fun fact about you
+
+print("Name: Henry L\nGrade: 11\nMajor:Computer Science\nFun Fact: I play the viola")
